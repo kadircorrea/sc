@@ -61,8 +61,8 @@ driver = webdriver.Remote(
     command_executor=url_us,
     options=XCUITestOptions().load_capabilities(desired_caps)
 )
-screenshot = driver.get_screenshot_as_base64()
-print(screenshot)
+#screenshot = driver.get_screenshot_as_base64()
+#print(screenshot)
 driver.get('https://www.google.es')
 
 driver.quit()
