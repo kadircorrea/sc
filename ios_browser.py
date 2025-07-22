@@ -42,7 +42,7 @@ def find_element_with_retries(driver, locator_strategy, locator_value, retries=3
 username = os.environ.get('SAUCE_USERNAME')
 access_key = os.environ.get('SAUCE_ACCESS_KEY')
 
-url_us = f'https://{username}:{access_key}@ondemand.eu-central-1.saucelabs.com:443/wd/hub'
+url_us = f'https://{username}:{access_key}@ondemand.us-west-1.saucelabs.com:443/wd/hub'
 
 desired_caps = {
     "platformName": "iOS",
