@@ -4,7 +4,7 @@ REM Pre-run script to download a file on Windows and check folder
 REM ------------------------------
 
 REM Set the URL of the file to download
-SET FILE_URL=https://files.testfile.org/PDF/100MB-TESTFILE.ORG.pdf
+SET FILE_URL=https://raw.githubusercontent.com/kadircorrea/sc/refs/heads/master/90mb.pdf
 
 REM Set the filename
 SET FILE_NAME=file.pdf
