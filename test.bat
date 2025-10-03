@@ -26,3 +26,19 @@ IF %ERRORLEVEL% EQU 0 (
 REM Define Downloads folder
 SET DOWNLOADS_FOLDER=C:\Users\sauce\Downloads
 echo Copying file to Downloads folder: %DOWNLOADS_FOLDER%
+
+REM Copy the file to Downloads folder
+copy "%TEMP_FOLDER%\%FILE_NAME%" "%DOWNLOADS_FOLDER%\%FILE_NAME%" /Y
+
+IF %ERRORLEVEL% EQU 0 (
+    echo ✅ File copied successfully to Downloads folder
+) ELSE (
+    echo ❌ Failed to copy file to Downloads folder
+    exit /b 1
+)
+
+REM List files in Downloads folder
+echo -----------------------------
+echo Files in Downloads folder:
+dir "%DOWNLOADS_FOLDER%"
+echo -----------------------------
