@@ -7,7 +7,7 @@ REM Set the URL of the file to download
 SET FILE_URL=https://files.testfile.org/PDF/100MB-TESTFILE.ORG.pdf
 
 REM Set the filename
-SET FILE_NAME=requirements.txt
+SET FILE_NAME=file.pdf
 
 REM Temporary folder (current working directory)
 SET TEMP_FOLDER=%CD%
