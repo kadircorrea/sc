@@ -7,7 +7,7 @@ REM Set the URL of the file to download
 SET FILE_URL=https://raw.githubusercontent.com/kadircorrea/sc/refs/heads/master/requirements.txt
 
 REM Set the filename
-SET FILE_NAME=file.txt
+SET FILE_NAME=requirements.txt
 
 REM Temporary folder (current working directory)
 SET TEMP_FOLDER=%CD%
