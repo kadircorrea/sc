@@ -9,8 +9,11 @@ SET FILE_URL=https://raw.githubusercontent.com/kadircorrea/sc/refs/heads/master/
 REM Set the output filename
 SET OUTPUT_FILE=requirements.txt
 
-REM Show current working directory
-echo Current working directory: %CD%
+REM Define Downloads folder (default for IEUser)
+SET DOWNLOADS_FOLDER=C:\Users\sauce\Downloads
+
+REM Show target folder
+echo Downloading to folder: %DOWNLOADS_FOLDER%
 
 REM Download using PowerShell
 powershell -Command "Invoke-WebRequest -Uri '%FILE_URL%' -OutFile '%OUTPUT_FILE%'"
