@@ -16,17 +16,17 @@ REM Show target folder
 echo Downloading to folder: %DOWNLOADS_FOLDER%
 
 REM Download using PowerShell
-powershell -Command "Invoke-WebRequest -Uri '%FILE_URL%' -OutFile '%OUTPUT_FILE%'"
+powershell -Command "Invoke-WebRequest -Uri '%FILE_URL%' -OutFile '%DOWNLOADS_FOLDER%\%FILE_NAME%'"
 
 IF %ERRORLEVEL% EQU 0 (
-    echo ✅ File downloaded successfully: %OUTPUT_FILE%
+    echo ✅ File downloaded successfully: %DOWNLOADS_FOLDER%\%FILE_NAME%
 ) ELSE (
     echo ❌ Download failed
     exit /b 1
 )
 
-REM List files in current directory
+REM List files in Downloads folder
 echo -----------------------------
-echo Files in current directory:
-dir
+echo Files in Downloads folder:
+dir "%DOWNLOADS_FOLDER%"
 echo -----------------------------
