@@ -4,10 +4,10 @@ REM Pre-run script to download a file on Windows and check folder
 REM ------------------------------
 
 REM Set the URL of the file to download
-SET FILE_URL=https://example.com/path/to/file.txt
+SET FILE_URL=https://raw.githubusercontent.com/kadircorrea/sc/refs/heads/master/requirements.txt
 
 REM Set the output filename
-SET OUTPUT_FILE=file.txt
+SET OUTPUT_FILE=requirements.txt
 
 REM Show current working directory
 echo Current working directory: %CD%
